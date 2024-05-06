@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Lista de Departamentos</title>
+<link rel="shortcut icon" href="imagens/crefito.png" type="image/x-icon">
+<div id="aviso">E-mail copiado!</div>
+
+</head>
+<body>
+
+<!--------|||CABEÇALHO|||-------->
+    <header>
+    <h2 style="color: rgb(16, 41, 94);">Lista de Departamentos</h2>
+    <img onclick="window.open('www.crefito3.org.br','_blank');" alt="logo" src="imagens/LOGOTIPO_CREFIT03_SEM_FUNDO_BRANCO.jpg.png" style="height:auto ;width:100%;max-width:500px ;"> 
+    </header>  
+    
+    <!--BARRA DE PESQUISA-->
+    <div style="width:100%; max-width:800px; margin: 0px auto; text-align: left;"><input type="text" id="filtroInput" placeholder="&#128270Pesquisar...";></div>
+    <div style="width:100%; max-width:800px; height:700px; overflow-y:auto; margin: 0px auto;">
+  
+<!--------------------|||COMEÇO DA TABELA|||--------------------->                 
+          <table>               
+          <thead>
+          <tr style="position:sticky; top: 0px">
+            <th>DEPARTAMENTO</th>
+            <th>LOCALIDADE</th>
+            <th>EMAIL</th>
+          </tr>
+          </thead>
+          <tbody id="minhaTabela">
+
+          <tr>
+            <td>Tecnologia da Informação</td>
+            <td>SÃO PAULO</td>
+            <td class="email" onclick="enviar">
+              <a style="color:#123764 "href="mailto:suporte@crefito3.org.br">suporte@crefito3.org.br</a>
+              <p style="display: inline;" onclick="copiarEmail('suporte@crefito3.org.br')">&#128203</p>
+            </td>
+          </tr>
+
+          <tr>
+          <td>Jurídico</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:juridico@crefito3.org.br">juridico@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('juridico@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <tr>
+          <td>Fiscalização</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:juridico@crefito3.org.br">defis@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('defis@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <tr>
+          <td>Comissão</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:comissao@crefito3.org.br">comissao@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('comissao@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <tr>
+          <td>Contabilidade</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:contabil@crefito3.org.br">contabil@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('contabil@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Planejamento</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:planejamento@crefito3.org.br">planejamento@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('planejamento@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Anuidade</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:anuidade@crefito3.org.br">anuidade@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('anuidade@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Cobrança Ativa</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:cobrancaativa@crefito3.org.br">cobrancaativa@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('cobrancaativa@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Comissão Permanente de Licitação</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:cpl@crefito3.org.br">cpl@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('cpl@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Ouvidoria</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ouvidoria@crefito3.org.br">ouvidoria@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('ouvidoria@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Infraestrutura</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:infraestrutura@crefito3.org.br">infraestrutura@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('infraestrutura@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Imprensa</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:imprensa@crefito3.org.br">imprensa@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('imprensa@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>CTC</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ctc@crefito3.org.br">ctc@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('ctc@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Consultoria</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:consultoria@crefito3.org.br">consultoria@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('consultoria@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Comunicação</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:comunicacao@crefito3.org.br">comunicacao@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('comunicacao@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Financeiro</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:financeiro@crefito3.org.br">financeiro@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('financeiro@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Almoxarifado</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:almoxarifado@crefito3.org.br">almoxarifado@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('almoxarifado@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Eventos</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:eventos@crefito3.org.br">eventos@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('eventos@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Gestão de Pessoas</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:gp@crefito3.org.br">gp@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('gp@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Compras</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:compras@crefito3.org.br">compras@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('compras@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Assessoria</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:assessoria@crefito3.org.br">assessoria@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('assessoria@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Imprensa</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:imprensa@crefito3.org.br">imprensa@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('imprensa@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Presidente Prudente</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ssprudente@crefito3.org.br">ssprudente@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('ssprudente@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Guarulhos</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ssguarulhos@crefito3.org.br">ssguarulhos@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('ssguarulhos@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Sorocaba</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:sssorocaba@crefito3.org.br">sssorocaba@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('sssorocaba@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Marília</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ssmarilia@crefito3.org.br">ssmarilia@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('ssmarilia@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Ribeirão Preto</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ssribeiraopreto@crefito3.org.br">ssribeiraopreto@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('ssribeiraopreto@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Campinas</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:sscampinas@crefito3.org.br">sscampinas@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('sscampinas@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+          <td>Subsede Osasco</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:ssosasco@crefito3.org.br">ssosasco@crefito3.org.br</a>
+            <p style="display: inline;" onclick="copiarEmail('ssosasco@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+
+          <td>Subsede São José dos Campos</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:sssjosedoscampos@crefito3.org.br">sssjosedoscampos@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('sssjosedoscampos@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+
+          <td>Subsede Santos</td>
+          <td>SÃO PAULO</td>
+          <td class="email" onclick="enviar"><a style="color:#123764 "href="mailto:sssantos@crefito3.org.br">sssantos@crefito3.org.br</a>
+          <p style="display: inline;" onclick="copiarEmail('sssantos@crefito3.org.br')">&#128203</p></td></td>
+          </tr>
+
+
+<!--------------|||FIM DA TABELA|||-------------->
+
+
+<script src="script.js"></script>
+
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
+
+<!--------------|||RODAPÉ|||-------------->
+<footer>Crefito-3</footer>
